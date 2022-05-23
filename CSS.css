@@ -1,0 +1,240 @@
+:root {
+  --cor1: #3aafa9;   /*#111112*/ /*#3aafa9*/
+  --cor2: #17252a;   /*#150438*/ /*#17252a*/
+  --corfonte: antiquewhite
+}
+
+*{
+  background-color: var(--cor1);
+  margin: 0%;
+  font-family: 'Fredoka', sans-serif;
+  box-sizing: border-box;
+}
+
+/*fazendo a barra de navegacao*/
+.divnav{
+  width: 100%;
+  height: 65px;
+  background-color: var(--cor2);
+}
+
+.nava{
+  color: var(--corfonte);
+  float: left;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.nava a:link {
+  color: var(--corfonte);
+}
+
+.trevo{
+  height: 50px;
+  width: 50px;
+  background-color: inherit;
+  margin-top: 8px;
+  margin-left: 40px;
+  float: left;
+}
+
+.linktrevo{
+  background-color: inherit;
+}
+
+.icones{
+  height: 40px;
+  width: 40px;
+  background-color: #faed26;
+  margin-top: 15px;
+  margin-right: 30px;
+  border-radius: 10px;
+  float: right;
+}
+
+.reddit:hover{
+  background-color: #ff690c;
+}
+
+.twitter:hover{
+  background-color: #1da1f2;
+}
+
+.tiktok:hover{
+  background-color: #f30550;
+}
+
+.instagram:hover{
+  background-color: #b128ba;
+}
+
+.nava:hover{
+  background-color: #faed26;
+  color: black;
+}
+
+.nava a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*mexendo em links*/
+a{
+    text-decoration: none;
+}
+
+/*fazendo coisa do main do index*/
+
+/*criando containers do main*/
+.divmain{
+  display: flex;
+  flex-direction: row;
+}
+
+.divmain1{
+  width: 32%;
+  height: 100%;
+  color: var(--corfonte);
+  background-color: var(--cor2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.divmain2{
+  width: 32%;
+  height: 100%;
+  color: var(--corfonte);
+  background-color: var(--cor2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.divmain3{
+  width: 32%;
+  height: 100%;
+  color: var(--corfonte);
+  background-color: var(--cor2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+/*texto do main*/
+.titulos{
+  background-color: inherit;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.textodiv{
+  background-color: inherit;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* imagens para o main*/
+.yulipe{
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: inherit;
+}
+
+.yarenne{
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.neru{
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+/*mexendo com o main do blog*/ 
+.divblog{
+  display: flex;
+  flex-direction: row;
+}
+
+.divmain4{
+  width: 50%;
+  height: 100%;
+  color: var(--corfonte);
+  background-color: var(--cor2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.divmain5{
+  width: 50%;
+  height: 100%;
+  color: var(--corfonte);
+  background-color: var(--cor2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.imagensmain{
+  height: 350px;
+  width: auto;
+  border-radius: 10px;
+}
+
+/*mexendo com o footer*/
+.divfooter{
+  background-color: var(--cor2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.afooter{
+  background-color: inherit;
+  color: var(--corfonte);
+  margin-bottom: 0px;
+  font-size: small;
+}
+
+.afooter:hover{
+  color: lightblue;
+  margin-bottom: 0px;
+}
+
+#cronometro{
+  background-color: var(--cor2);
+  font-size: 50px;
+  color: #faed26;
+}

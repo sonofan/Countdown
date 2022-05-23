@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+     <head>
+          <title>Sonofan Home</title>
+          <link rel="stylesheet" href="CSS.css">
+          <link rel="icon" href="imagens/favicon.ico">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+          <meta charset=”utf-8> 
+          <meta name=”Viewport” content=”width=device-width, initial-scale=1.0”>
+     </head>
+
+     <body>
+
+          <header>
+               <div class="divnav">
+                    <a href="index.html" class="linktrevo"><img class="trevo" src="imagens/trevo_guilda.png"></a>
+                    <a class="nava" href="Livros.html">Receitas</a>
+                    <a class="nava" href="Blog.html">Novidades</a>
+                    <a class="nava" href="Galeria.html">Galeria</a>
+                    <a href="https://twitter.com/sonofan_oficial" target="_blank"><img class="icones twitter" src="imagens/twitter.png"></a>
+                    <a href="https://www.instagram.com/sonofan_oficial/" target="_blank"><img class="icones instagram" src="imagens/Instagram.png"></a>
+                    <a href="https://www.tiktok.com/@sonofan_oficial" target="_blank"><img class="icones tiktok" src="imagens/tiktok.png"></a>
+                    <a href="https://www.reddit.com/user/sonofan_oficial" target="_blank"><img class="icones reddit" src="imagens/reddit.png"></a>
+               </div>
+          </header>
+
+          <main>
+               <div class="divmain">
+                    <div class="divmain1">
+                         <h1 class="titulos">Receitas do TITAN</h1>
+                         <p class="textodiv">Veja todas as melhores receitas ja testadas pelo TITAN</p> 
+                         <img class="yulipe" src="imagens/titan.png">
+                    </div>
+                    <div class="divmain2"> 
+                         <h1 class="titulos">Cronometro</h1>
+                         <p class="textodiv">Veja quanto tempo falta para o proximo episodio de cozinhando com o TITAN</p>
+                         <p id="cronometro"></p>
+                    </div>
+                    <div class="divmain3"> 
+                         <h1 class="titulos">Galeria</h1>
+                         <p class="textodiv">Veja as guloseimas feitas pelo chefe TITAN</p>
+                         <img class="yulipe" src="imagens/torta.png">
+                    </div>
+               </div>
+          </main>
+          <script>
+               let segundos = 60;
+               let minutos = 29;
+               let horas = 10;
+               setInterval(myFunction, 1000);
+               function myFunction() {
+                    segundos = (segundos - 1);
+                    if (segundos == 0){
+                         segundos = 60;
+                         minutos = (minutos-1);
+                    }
+                    if (minutos == 0){
+                         minutos = 60;
+                         horas = (horas - 1)
+                    }
+                    let tempo = horas + ":" + minutos + ":" + segundos;
+                    document.getElementById("cronometro").innerHTML = tempo
+} 
+          </script>
+     </body>
+
+
+
+</html>
+
+     
